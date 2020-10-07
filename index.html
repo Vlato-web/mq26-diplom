@@ -7,6 +7,74 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<section class="popup popup--hidden">
+			<div class="popup__container">
+				<button class="popup__button-close" type="button">
+					<span class="popup__button-text--hidden">Закрыть окно</span>
+				</button>
+				<div class="popup__content">
+					<h2 class="title title__section">Ваш фидбек</h2>
+					<form class="feedback">
+						<div class="feedback__group">
+							<label class="feedback__label">
+								<span class="feedback__description"
+									>Как часто вы заходите на сайт?</span
+								>
+								<select class="feedback__select">
+									<option>Почти каждый день</option>
+									<option>Раз в несколько дней</option>
+									<option>Раз в несколько недель</option>
+									<option>Несколько раз в год</option>
+								</select>
+							</label>
+						</div>
+						<div class="feedback__group">
+							<span class="feedback__description"
+								>Вы подписаны на e-mail рассылку?</span
+							>
+							<div class="feedback__switch">
+								<label class="feedback__label">
+									<input
+										type="radio"
+										class="feedback__radio"
+										name="feedback__radio-group"
+									/>
+									<span class="feedback__radio-text">Да</span>
+								</label>
+								<label class="feedback__label">
+									<input
+										type="radio"
+										class="feedback__radio"
+										name="feedback__radio-group"
+									/>
+									<span class="feedback__radio-text"
+										>Нет</span
+									>
+								</label>
+							</div>
+						</div>
+						<div class="feedback__group">
+							<label class="feedback__label">
+								<span class="feedback__description"
+									>Расскажите, какой контент вы хотели бы
+									видеть на нашем сайте?</span
+								>
+								<textarea
+									class="feedback__text"
+									placeholder="Может, больше рецептов?"
+									required
+								></textarea>
+							</label>
+						</div>
+						<div class="feedback__group">
+							<button class="feebback__button-send" type="submit">
+								Отправить
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
 		<header class="header">
 			<div class="header__content">
 				<div class="header__top-panel">
@@ -155,7 +223,7 @@
 				<section class="post-list">
 					<article class="post-list__article">
 						<img
-							src="/images/last-post1.jpg"
+							src="images/last-post1.jpg"
 							alt="Пляж"
 							class="post-list__img"
 						/>
@@ -187,7 +255,7 @@
 					</article>
 					<article class="post-list__article">
 						<img
-							src="/images/last-post2.jpg"
+							src="images/last-post2.jpg"
 							alt="Йога"
 							class="post-list__img"
 						/>
@@ -218,7 +286,7 @@
 					</article>
 					<article class="post-list__article">
 						<img
-							src="/images/last-post3.jpg"
+							src="images/last-post3.jpg"
 							alt="Музакальный фестиваль"
 							class="post-list__img"
 						/>
@@ -250,7 +318,7 @@
 					</article>
 					<article class="post-list__article">
 						<img
-							src="/images/last-post4.jpg"
+							src="images/last-post4.jpg"
 							alt="Кулинария"
 							class="post-list__img"
 						/>
@@ -281,7 +349,7 @@
 					</article>
 					<article class="post-list__article">
 						<img
-							src="/images/last-post5.jpg"
+							src="images/last-post5.jpg"
 							alt="Принт на подушке"
 							class="post-list__img"
 						/>
@@ -321,7 +389,7 @@
 						<h2 class="title title__section">Новые посты</h2>
 						<article class="latest-post">
 							<img
-								src="/images/2.jpg"
+								src="images/2.jpg"
 								alt="Пляж"
 								class="latest-post__img"
 							/>
@@ -334,7 +402,7 @@
 						</article>
 						<article class="latest-post">
 							<img
-								src="/images/151.jpg"
+								src="images/151.jpg"
 								alt="Йога"
 								class="latest-post__img"
 							/>
@@ -347,7 +415,7 @@
 						</article>
 						<article class="latest-post">
 							<img
-								src="/images/45.jpg"
+								src="images/45.jpg"
 								alt="Балкон"
 								class="latest-post__img"
 							/>
@@ -360,7 +428,7 @@
 						</article>
 						<article class="latest-post">
 							<img
-								src="/images/501.jpg"
+								src="images/501.jpg"
 								alt="Кулинария"
 								class="latest-post__img"
 							/>
@@ -373,7 +441,7 @@
 						</article>
 						<article class="latest-post">
 							<img
-								src="/images/7.jpg"
+								src="images/7.jpg"
 								alt="Прически"
 								class="latest-post__img"
 							/>
@@ -480,19 +548,19 @@
 						<picture class="shop__images">
 							<source
 								media="(max-width: 767px)"
-								srcset="/images/shop-item-mobile1.jpg"
+								srcset="images/shop-item-mobile1.jpg"
 							/>
 							<source
 								media="(max-width: 1199px)"
-								srcset="/images/shop-item-tablet1.jpg"
+								srcset="images/shop-item-tablet1.jpg"
 							/>
 							<source
 								media="(min-width: 1200px)"
-								srcset="/images/shop-item-desk1.jpg"
+								srcset="images/shop-item-desk1.jpg"
 							/>
 							<img
 								class="shop__img"
-								src="/images/shop-item-desk1.jpg"
+								src="images/shop-item-desk1.jpg"
 								alt="Подушка"
 							/>
 						</picture>
@@ -519,19 +587,19 @@
 						<picture class="shop__images">
 							<source
 								media="(max-width: 767px)"
-								srcset="/images/shop-item-mobilet2.jpg"
+								srcset="images/shop-item-mobilet2.jpg"
 							/>
 							<source
 								media="(max-width: 1199px)"
-								srcset="/images/shop-item-tablet2.jpg"
+								srcset="images/shop-item-tablet2.jpg"
 							/>
 							<source
 								media="(min-width: 1200px)"
-								srcset="/images/shop-item-desk2.jpg"
+								srcset="images/shop-item-desk2.jpg"
 							/>
 							<img
 								class="shop__img"
-								src="/images/shop-item-desk2.jpg"
+								src="images/shop-item-desk2.jpg"
 								alt="Кукла"
 							/>
 						</picture>
@@ -557,19 +625,19 @@
 						<picture class="shop__images">
 							<source
 								media="(max-width: 767px)"
-								srcset="/images/shop-item-mobilet3.jpg"
+								srcset="images/shop-item-mobilet3.jpg"
 							/>
 							<source
 								media="(max-width: 1199px)"
-								srcset="/images/shop-item-tablet3.jpg"
+								srcset="images/shop-item-tablet3.jpg"
 							/>
 							<source
 								media="(min-width: 1200px)"
-								srcset="/images/shop-item-desk3.jpg"
+								srcset="images/shop-item-desk3.jpg"
 							/>
 							<img
 								class="shop__img"
-								src="/images/shop-item-desk3.jpg"
+								src="images/shop-item-desk3.jpg"
 								alt="Рамка"
 							/>
 						</picture>
